@@ -1,0 +1,21 @@
+.Navbar{
+    height: 120px;
+  }
+  
+  .text-to-right {
+    align-content: right;
+    text-align: right;
+  }
+  
+  .cartIcon{
+    color: white;
+    cursor: pointer;
+    color:rgb(238, 238, 238);
+    margin-top: 18px;
+  }
+
+  .menu{
+    left: auto;
+    right: auto;
+  }
+  
