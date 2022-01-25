@@ -2,6 +2,7 @@ import React from 'react';
 
 import {imagenes} from './ItemListContainer'
 import ItemCount from './ItemCount/ItemCount';
+import { Link } from 'react-router-dom';
 
 
 function ItemList(prod) {
@@ -27,10 +28,12 @@ console.log(cant);
         {`${prod.price}`}$ 
         <div className="card-footer w-100">
        
-    
-            <button className="btn btn-outline-primary btn-block">
+    <Link to={'/tiendaweb/DetalleProducto'}>
+    <button className="btn btn-outline-primary btn-block">
                 Ver producto 
-            </button>      
+            </button>   
+    </Link>
+             
                                                                 
         </div>
         <br></br>

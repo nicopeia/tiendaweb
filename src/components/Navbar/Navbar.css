@@ -18,4 +18,8 @@
     left: auto;
     right: auto;
   }
+
+  .logoname img{
+    text-decoration: none;
+  }
   

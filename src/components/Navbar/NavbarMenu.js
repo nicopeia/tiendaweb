@@ -4,16 +4,23 @@ import './Navbar.css';
 import { Nav,Navbar,NavDropdown,Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function NavbarMenu() {
   return (
     <div>
+
+  
     <Navbar bg="dark" variant="dark" sticky='top' expand='lg' >
   <Container>
-    <Navbar.Brand >
-    <img src={logo} width='90px' height='90px' />{' '}
+
+  <Link to={'/tiendaweb'}> 
+  <Navbar.Brand className='logoName'>
+    <img src={logo} width='90px' height='90px'  />{' '}
     RAYO-DEPORTES
     </Navbar.Brand>
+      </Link>
+ 
 
 
 <Navbar.Toggle/>
@@ -23,18 +30,22 @@ function NavbarMenu() {
 
 
     <Nav className="ms-auto">
-    <Nav.Link href="#home">Inicio</Nav.Link>
-      <NavDropdown title="Remeras">
+    <Link to={'/tiendaweb'}>Inicio</Link>
+    {/* <NavDropdown title="Remeras"> */}
 
-        <NavDropdown.Item >Adidas</NavDropdown.Item>
-        <NavDropdown.Item >Nike</NavDropdown.Item>
-        <NavDropdown.Item >Puma</NavDropdown.Item>
-      </NavDropdown>
-      <Nav.Link href="#features">Zapatillas</Nav.Link>
-      <Nav.Link href="#features">Gorras</Nav.Link>
-      <Nav.Link href="#features">Shorts</Nav.Link>
-      <Nav.Link href="#pricing">Contacto</Nav.Link>
-      <FontAwesomeIcon icon={faShoppingCart} className='cartIcon'/>
+        {/* <NavDropdown.Item >Adidas</NavDropdown.Item> */}
+        {/* <NavDropdown.Item >Nike</NavDropdown.Item> */}
+        {/* <NavDropdown.Item >Puma</NavDropdown.Item> */}
+      {/* </NavDropdown> */}
+      
+      <Link to={'/tiendaweb/categoria/zapatillas'}>Zapatillas</Link>
+      <Link to={'/tiendaweb/categoria/gorras'}>Gorras</Link>
+      <Link to={'/tiendaweb/categoria/camperas'}>Camperas</Link>
+      <Link to={'/tiendaweb/contacto'}>Contacto</Link>
+          <Link to={'/tiendaweb/cart'}> 
+          <FontAwesomeIcon icon={faShoppingCart} className='cartIcon'/>
+      </Link>
+    
     </Nav>
    
     </Navbar.Collapse>
