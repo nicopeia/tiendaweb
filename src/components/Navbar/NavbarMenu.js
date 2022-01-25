@@ -12,7 +12,7 @@ function NavbarMenu() {
   <Container>
     <Navbar.Brand >
     <img src={logo} width='90px' height='90px' />{' '}
-     NIKOPEIA-DEV
+    RAYO-DEPORTES
     </Navbar.Brand>
 
 
@@ -24,14 +24,15 @@ function NavbarMenu() {
 
     <Nav className="ms-auto">
     <Nav.Link href="#home">Inicio</Nav.Link>
-      <NavDropdown title="Servicios">
+      <NavDropdown title="Remeras">
 
-        <NavDropdown.Item >Desarrollo web</NavDropdown.Item>
-        <NavDropdown.Item >Seo</NavDropdown.Item>
-        <NavDropdown.Item >Redes</NavDropdown.Item>
+        <NavDropdown.Item >Adidas</NavDropdown.Item>
+        <NavDropdown.Item >Nike</NavDropdown.Item>
+        <NavDropdown.Item >Puma</NavDropdown.Item>
       </NavDropdown>
-     
-      <Nav.Link href="#features">Nosotros</Nav.Link>
+      <Nav.Link href="#features">Zapatillas</Nav.Link>
+      <Nav.Link href="#features">Gorras</Nav.Link>
+      <Nav.Link href="#features">Shorts</Nav.Link>
       <Nav.Link href="#pricing">Contacto</Nav.Link>
       <FontAwesomeIcon icon={faShoppingCart} className='cartIcon'/>
     </Nav>
