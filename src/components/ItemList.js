@@ -14,7 +14,7 @@ console.log(cant);
   return <div>
 
 <div  
-    className='col-md-4'>  
+    className='col-md-4' key={prod.id}>  
     
                       
     <div className="card w-100 mt-5" >
@@ -28,9 +28,9 @@ console.log(cant);
         {`${prod.price}`}$ 
         <div className="card-footer w-100">
        
-    <Link to={'/tiendaweb/DetalleProducto'}>
+    <Link to={ `/tiendaweb/DetalleProducto/${prod.id}` }>
     <button className="btn btn-outline-primary btn-block">
-                Ver producto 
+                Ver producto  
             </button>   
     </Link>
              

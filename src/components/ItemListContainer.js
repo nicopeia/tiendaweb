@@ -28,7 +28,7 @@ const [loading,setLoading]=useState(true)
 {loading ? <h2>Cargando ...</h2> :
 
 
-productos.map((prod) =>  <ItemList key={prod.id} name= {prod.name} categoria= {prod.categoria} price= {prod.price} foto= {prod.foto} />
+productos.map((prod) =>  <ItemList key={prod.id} id={prod.id} name= {prod.name} categoria= {prod.categoria} price= {prod.price} foto= {prod.foto} />
 
  
 
