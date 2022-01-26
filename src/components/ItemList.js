@@ -2,11 +2,12 @@ import React from 'react';
 
 import {imagenes} from './ItemListContainer'
 import ItemCount from './ItemCount/ItemCount';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
 function ItemList(prod) {
     
+
     function onAdd(cant){
 console.log(cant);
     }
@@ -37,7 +38,7 @@ console.log(cant);
                                                                 
         </div>
         <br></br>
-    <ItemCount initial={1} stock={15} onAdd={onAdd}/>   
+    <ItemCount initial={1} stock={15} onAdd={onAdd} />   
     </div>
    
 </div>  
