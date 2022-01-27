@@ -1,11 +1,11 @@
 
 export const productos = [
-    { id: '1', categoria: 'zapatillas', name: "Zapatillas 1", price: 3700, foto:'./imagenes/zapatillas.jpg' },
-    { id: '2', categoria: 'zapatillas', name: "Zapatillas  2", price: 2700, foto:'./imagenes/zapatillasNike.png' },
-    { id: '3', categoria: 'gorras', name: "Zapatillas  3", price: 2700, foto:'./imagenes/zapatillas.jpg' },
-    { id: '4', categoria: 'gorras', name: "Zapatillas  4", price: 2700, foto:'./imagenes/zapatillas.jpg' },
-    { id: '5', categoria: 'camperas', name: "Zapatillas 5", price: 2700, foto:'./imagenes/zapatillas.jpg' },
-    { id: '6', categoria: 'camperas', name: "Zapatillas 6", price: 2700, foto:'./imagenes/zapatillas.jpg' },
-    { id: '7', categoria: 'camperas', name: "Zapatillas 7", price: 2700, foto:'./imagenes/zapatillas.jpg' },
+    { id: '1', categoria: 'zapatillas', name: "Zapatillas vans", price: 3700, foto:'./imagenes/zapatillas.jpg' },
+    { id: '2', categoria: 'zapatillas', name: "Zapatillas  nike", price: 2700, foto:'./imagenes/zapatillasNike.png' },
+    { id: '3', categoria: 'gorras', name: "Gorra nike", price: 2700, foto:'./imagenes/gorra1.png' },
+    { id: '4', categoria: 'gorras', name: "Gorra nike", price: 2700, foto:'./imagenes/gorra2.png' },
+    { id: '5', categoria: 'camperas', name: "Campera adidas", price: 2700, foto:'./imagenes/campera1.png' },
+    { id: '6', categoria: 'camperas', name: "Camperas adidas", price: 2700, foto:'./imagenes/campera2.png' },
+    { id: '7', categoria: 'camperas', name: "Camperas adidas", price: 2700, foto:'./imagenes/campera3.png' },
     
 ];

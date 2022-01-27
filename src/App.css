@@ -1,5 +1,7 @@
 
-
+.App{
+  text-align: center;
+}
 .Navbar{
   height: 120px;
 }

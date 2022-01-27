@@ -17,7 +17,7 @@ function NavbarMenu() {
   <Link to={'/tiendaweb'}> 
   <Navbar.Brand className='logoName'>
     <img src={logo} width='90px' height='90px'  />{' '}
-    RAYO-DEPORTES
+   RAYO DEPORTES
     </Navbar.Brand>
       </Link>
  
