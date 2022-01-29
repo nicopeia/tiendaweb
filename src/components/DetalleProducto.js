@@ -7,22 +7,22 @@ import ItemDetalle from './ItemDetalle.js';
 
 function DetalleProducto() {
 
-const [productos,setProductos] = useState({})
-const {idCategoria} = useParams()
+const [producto,setProducto] = useState([])
+const {idProducto} = useParams()
  useEffect(()=>{
 
 getFetch
-.then (data =>{
-  setProductos(data.find(producto => productos.categoria === idCategoria))
-})
+.then (res =>setProducto(res.find(producto => producto.id === idProducto)))
+  
+
         .catch(err => console.log(err))
         
- },[])
+ },[idProducto])
 
 
 
   return <>
-<ItemDetalle productos ={productos}/>
+<ItemDetalle producto ={producto}   name= {producto.name} categoria= {producto.categoria} />
 
   </>;
 }

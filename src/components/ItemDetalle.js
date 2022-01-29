@@ -1,11 +1,13 @@
 import React from 'react';
 
 
-function ItemDetalle(productos) {
+function ItemDetalle(producto) {
   return <div>
 
 
-<h1>{productos.name}</h1>
+<div className="card-header" >
+         {`${producto.name} - ${producto.categoria}`}
+        </div>
 
 
   </div>;
