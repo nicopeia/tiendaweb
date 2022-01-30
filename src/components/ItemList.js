@@ -12,6 +12,7 @@ function ItemList(prod) {
 console.log(cant);
     }
  
+    console.log(prod);
   return <div>
 
 <div  

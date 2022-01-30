@@ -4,7 +4,7 @@ import {getFetch} from '../helpers/Promise.js';
 import ItemList from './ItemList.js';
 import { Link, useParams } from 'react-router-dom';
 
-export const imagenes = require.context('../helpers',true);
+export const imagenes = require.context('../helpers/',true);
 
 function ItemListContainer() {
 

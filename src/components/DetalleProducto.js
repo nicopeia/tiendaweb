@@ -1,14 +1,19 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import {getFetch} from '../helpers/Promise.js';
+import {getFetch} from '../helpers/PromiseDetalleProducto';
 
 import { Link, useParams } from 'react-router-dom';
 import ItemDetalle from './ItemDetalle.js';
 
-function DetalleProducto() {
 
+
+
+function DetalleProducto() {
+  
 const [producto,setProducto] = useState([])
 const {idProducto} = useParams()
+
+
  useEffect(()=>{
 
 getFetch
@@ -22,9 +27,11 @@ getFetch
 
 
   return <>
-<ItemDetalle producto ={producto}   name= {producto.name} categoria= {producto.categoria} />
+  
+<ItemDetalle key={producto.id} id={producto.id}    name= {producto.name} categoria= {producto.categoria} price= {producto.price} foto= {producto.foto} />
 
   </>;
 }
 
 export default DetalleProducto;
+export const imagen = require.context('../helpers',true);
