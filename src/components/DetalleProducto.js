@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import {getFetch} from '../helpers/PromiseDetalleProducto';
-
 import { Link, useParams } from 'react-router-dom';
 import ItemDetalle from './ItemDetalle.js';
 
@@ -28,7 +27,6 @@ getFetch
 
   return <>
   
-<ItemDetalle key={producto.id} id={producto.id}    name= {producto.name} categoria= {producto.categoria} price= {producto.price} foto= {producto.foto} />
 
   </>;
 }
